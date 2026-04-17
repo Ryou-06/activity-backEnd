@@ -93,12 +93,12 @@
         </div>
     </div>
 
-    {{-- ── LOGOUT MODAL WITH BURGUNDY & TEAL THEME ───────────────────────────────────────── --}}
+    {{-- ── LOGOUT MODAL WITH EXCHANGED COLORS (TEAL HEADER, BURGUNDY BUTTON) ───────────────────────────────────────── --}}
     <div x-show="showLogout" x-transition style="display:none"
         class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
         <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-2xl w-full max-w-md overflow-hidden">
-            <!-- Header with Burgundy -->
-            <div class="px-6 py-4" style="background: linear-gradient(135deg, #6D0B2F 0%, #8B1A3B 100%);">
+            <!-- Header with Teal (exchanged from Burgundy) -->
+            <div class="px-6 py-4" style="background: linear-gradient(135deg, #004d4d 0%, #0F766E 100%);">
                 <div class="flex items-center gap-3">
                     <!-- Warning Icon -->
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -133,9 +133,9 @@
                     <button type="submit"
                         class="px-5 py-2.5 text-white rounded-lg font-semibold transition duration-200 ease-in-out
                                focus:outline-none focus:ring-2 focus:ring-offset-2"
-                        style="background: linear-gradient(135deg, #004d4d 0%, #0F766E 100%);"
-                        onmouseover="this.style.background='linear-gradient(135deg, #003d3d 0%, #0A5E58 100%)'"
-                        onmouseout="this.style.background='linear-gradient(135deg, #004d4d 0%, #0F766E 100%)'">
+                        style="background: linear-gradient(135deg, #6D0B2F 0%, #8B1A3B 100%);"
+                        onmouseover="this.style.background='linear-gradient(135deg, #550921 0%, #6D0B2F 100%)'"
+                        onmouseout="this.style.background='linear-gradient(135deg, #6D0B2F 0%, #8B1A3B 100%)'">
                         Yes, Logout
                     </button>
                 </form>
