@@ -64,7 +64,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="{{ asset('images/hero.jpg') }}" alt="Students at Gordon College" />
+      <img src="{{ asset('images/hero.png') }}" alt="Students at Gordon College" />
     </div>
   </section>
   <section class="features">

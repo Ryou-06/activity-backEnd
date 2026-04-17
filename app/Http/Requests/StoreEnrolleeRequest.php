@@ -33,4 +33,12 @@ class StoreEnrolleeRequest extends FormRequest
             'block.regex' => 'Block must be capital letters only (max 5 chars).',
         ];
     }
+    
+    protected function prepareForValidation()
+{
+    // If dropdown was used, use that value
+    if ($this->has('block_select') && !empty($this->block_select)) {
+        $this->merge(['block' => $this->block_select]);
+    }
+}
 }
