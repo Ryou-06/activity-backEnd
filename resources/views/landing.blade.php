@@ -47,7 +47,11 @@
 </head>
 <body>
   <nav class="navbar">
-    <span class="brand">🎓 GC Student Portal</span>
+    {{-- TASK 5 FIX: Pinalitan natin yung emoji ng mismong logo.png na nai-save mo --}}
+    <span class="brand" style="display: flex; align-items: center; gap: 10px;">
+        <img src="{{ asset('images/logo.png') }}" alt="Gordon College Logo" style="height: 35px; width: auto; border-radius: 50%;">
+        GC Student Portal
+    </span>
     <div class="nav-links">
       <a href="{{ route('login') }}"    class="btn btn-outline">Login</a>
       <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
@@ -64,7 +68,8 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="{{ asset('images/hero.png') }}" alt="Students at Gordon College" />
+      {{-- TASK 2 FIX: Binago ko ito papuntang hero.jpg --}}
+      <img src="{{ asset('images/hero.jpg') }}" alt="Students at Gordon College" />
     </div>
   </section>
   <section class="features">
