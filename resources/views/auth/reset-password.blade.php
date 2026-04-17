@@ -1,4 +1,7 @@
 <x-guest-layout>
+     <x-slot name="title">
+        Reset Password — Student Management Portal
+    </x-slot>
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
 
