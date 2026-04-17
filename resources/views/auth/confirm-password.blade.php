@@ -1,4 +1,7 @@
 <x-guest-layout>
+     <x-slot name="title">
+        Confirm Password — Student Management Portal
+    </x-slot>
     <div class="mb-4 text-sm text-gray-600">
         {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
     </div>

@@ -1,10 +1,14 @@
 {{-- resources/views/dashboard.blade.php --}}
 <x-app-layout>
-  <x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-      Student Enrollment Records
-    </h2>
-  </x-slot>
+    <x-slot name="title">
+        Dashboard — Student Management Portal
+    </x-slot>
+
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            Student Enrollment Records
+        </h2>
+    </x-slot>
 
   <div class="py-8 px-6"
     x-data="{
