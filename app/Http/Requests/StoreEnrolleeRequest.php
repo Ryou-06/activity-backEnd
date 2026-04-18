@@ -26,7 +26,7 @@ class StoreEnrolleeRequest extends FormRequest
     {
         return [
             'student_id.digits' => 'Student ID must be exactly 6 digits.',
-            'student_id.unique' => 'This Student ID is already registered.',
+            'student_id.unique' => '⚠️ Student already added! This ID is already registered.',
             'name.regex' => 'Name must contain letters only - no numbers.',
             'course.in' => 'Please select a valid course.',
             'year.between' => 'Year level must be between 1 and 4.',
